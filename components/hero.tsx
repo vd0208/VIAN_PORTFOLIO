@@ -108,7 +108,7 @@ export function Hero() {
             {/* Social Links */}
             <div className="flex gap-4 pt-4">
               {[
-                { icon: Github, href: "https://github.com/viandsouza", label: "GitHub" },
+                { icon: Github, href: "https://github.com/vd0208", label: "GitHub" },
                 { icon: Linkedin, href: "https://linkedin.com/in/viandsouza", label: "LinkedIn" },
                 { icon: Mail, href: "mailto:viandsouza002@gmail.com", label: "Email" },
               ].map(({ icon: Icon, href, label }) => (
