@@ -6,6 +6,20 @@ import { ExternalLink, Github } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const projects = [
+  
+  {
+  title: "Customer Churn Analysis Model",
+  description: "RAG Platform for Budget Analysis",
+  details: [
+    "Created high-contrast KDE plots to identify churn risk thresholds.",
+    "Developed a ”Usage Decay” metric to track declining 90-day engagement",
+    " Built a Random Forest model identifying at-risk users with 85% accuracy.",
+    "Leveraged FAKER to simulate 2,000+ realistic customer profiles and login behaviors.",
+    "Designed an interactive dashboard for monitoring revenue at risk and deployed it using Streamlit.",
+  ],
+  technologies: ["Python", "Streamlit", "NumPy", "Scikit-Learn", "Joblib:", "Matplotlib", "Pandas"],
+  github: "https://github.com/vd0208/Customer-churn-analysis-model"
+},
   {
   title: "Indian_Budget_Analysis_using RAG",
   description: "RAG Platform for Budget Analysis",
