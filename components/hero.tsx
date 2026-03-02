@@ -110,7 +110,7 @@ export function Hero() {
               {[
                 { icon: Github, href: "https://github.com/vd0208", label: "GitHub" },
                 { icon: Linkedin, href: "https://linkedin.com/in/viandsouza", label: "LinkedIn" },
-                { icon: Mail, href: "mailto:viandsouza002@gmail.com", label: "Email" },
+                { icon: Mail, href: "mailto:viandsouza08@gmail.com", label: "Email" },
               ].map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
