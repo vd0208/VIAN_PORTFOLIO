@@ -44,7 +44,7 @@ export function Contact() {
         {/* Contact Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
-            { icon: Mail, label: "Email", value: "viandsouza002@gmail.com", href: "mailto:viandsouza002@gmail.com" },
+            { icon: Mail, label: "Email", value: "viandsouza002@gmail.com", href: "mailto:viandsouza08@gmail.com" },
             { icon: Phone, label: "Phone (UK)", value: "+44 7887 195 125", href: "tel:+447887195125" },
             { icon: Phone, label: "Phone (IN)", value: "+91 7892 791 046", href: "tel:+917892791046" },
             { icon: Linkedin, label: "LinkedIn", value: "Connect with me", href: "https://linkedin.com/in/viandsouza", external: true },
