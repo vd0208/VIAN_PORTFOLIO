@@ -5,13 +5,6 @@ import { Github, Linkedin, Mail, ArrowRight, MapPin } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import profilePic from "./profile.jpg"
 
-const metrics = [
-  { value: "85%", label: "Churn model accuracy" },
-  { value: "40%", label: "RAG accuracy uplift" },
-  { value: "50+", label: "Members led" },
-  { value: "30s", label: "Per-query analysis" },
-]
-
 const focusAreas = ["Python", "Machine Learning", "SQL", "RAG / NLP", "Data Visualisation"]
 
 export function Hero() {
@@ -100,15 +93,6 @@ export function Hero() {
               <MapPin className="h-4 w-4 text-primary" />
               <span className="text-sm font-medium">Bristol, United Kingdom</span>
             </div>
-          </div>
-
-          <div className="grid grid-cols-2 gap-3">
-            {metrics.map((m) => (
-              <div key={m.label} className="rounded-lg border border-border bg-card p-4">
-                <p className="font-mono text-2xl font-bold text-primary">{m.value}</p>
-                <p className="mt-1 text-xs text-muted-foreground leading-snug">{m.label}</p>
-              </div>
-            ))}
           </div>
         </div>
       </div>
