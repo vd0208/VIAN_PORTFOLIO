@@ -1,28 +1,23 @@
 "use client"
 
 import { useEffect, useRef, useState } from "react"
-import { Card } from "@/components/ui/card"
 import { Award, Trophy } from "lucide-react"
 
 const awards = [
   {
-    title: "Student Academic Merit",
+    title: "Student Academic Merit Award",
     organization: "St Aloysius University",
-    years: "2023, 2024, 2025",
-    description: "Recognized for outstanding academic performance across all three years of undergraduate studies.",
+    years: "2023 · 2024 · 2025",
+    description: "Awarded three consecutive years in recognition of outstanding academic performance.",
+    featured: true,
   },
   {
-    title: "Community Leadership Award",
-    organization: "ICYM Moodbidri Unit",
-    years: "2025",
-    description: "Awarded for exceptional leadership and community service as President of ICYM Moodbidri Unit.",
-  },
-  {
-    title: "Special Award",
+    title: "Special Award for Outstanding Leadership",
     organization: "St Aloysius University",
     years: "2025",
     description:
-      "Special recognition for outstanding performance in curriculum, extra-curriculum, and leadership activities.",
+      "Recognised for directing a 50-member youth organisation, hosting a national-scale conference, and forging corporate event partnerships.",
+    featured: false,
   },
 ]
 
@@ -33,53 +28,43 @@ export function Awards() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-        }
+        if (entry.isIntersecting) setIsVisible(true)
       },
       { threshold: 0.1 },
     )
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
-    }
-
+    if (sectionRef.current) observer.observe(sectionRef.current)
     return () => observer.disconnect()
   }, [])
 
   return (
-    <section id="awards" ref={sectionRef} className="py-20">
-      <div className={`space-y-12 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
-        <div className="space-y-2">
-          <h2 className="text-3xl lg:text-4xl font-bold">Awards & Recognition</h2>
-          <div className="h-1 w-20 bg-primary rounded-full" />
-        </div>
+    <section id="awards" ref={sectionRef} className="py-20 border-t border-border">
+      <div className={`space-y-12 ${isVisible ? "fade-in-up" : "opacity-0"}`}>
+        <header className="space-y-3">
+          <p className="mono-label text-xs text-primary">06 — Recognition</p>
+          <h2 className="text-3xl lg:text-4xl font-bold tracking-tight">Achievements &amp; awards</h2>
+        </header>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {awards.map((award, index) => (
-            <Card
-              key={index}
-              className="p-6 bg-card border-border hover:border-primary/50 transition-all hover:-translate-y-2 group"
-            >
-              <div className="space-y-4">
+        <div className="grid md:grid-cols-2 gap-5">
+          {awards.map((award, index) => {
+            const Icon = award.featured ? Trophy : Award
+            return (
+              <div
+                key={award.title}
+                className="card-hover rounded-xl border border-border bg-card p-6 slide-in"
+                style={{ animationDelay: `${index * 0.08}s` }}
+              >
                 <div className="flex items-start justify-between">
-                  <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
-                    {index === 0 ? (
-                      <Trophy className="h-6 w-6 text-primary" />
-                    ) : (
-                      <Award className="h-6 w-6 text-primary" />
-                    )}
+                  <div className="rounded-lg bg-primary/10 p-2.5">
+                    <Icon className="h-5 w-5 text-primary" />
                   </div>
-                  <span className="text-xs text-muted-foreground font-mono">{award.years}</span>
+                  <span className="font-mono text-xs text-muted-foreground">{award.years}</span>
                 </div>
-                <div className="space-y-2">
-                  <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">{award.title}</h3>
-                  <p className="text-sm text-primary">{award.organization}</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{award.description}</p>
-                </div>
+                <h3 className="mt-4 text-lg font-semibold leading-tight">{award.title}</h3>
+                <p className="mt-1 text-sm text-primary">{award.organization}</p>
+                <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{award.description}</p>
               </div>
-            </Card>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>
