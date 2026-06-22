@@ -8,8 +8,9 @@ import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Vian Dsouza - Data Science & Analytics Portfolio",
-  description: "Data Science postgraduate passionate about fintech and analytics. Skilled in Python, SQL, and React.",
+  title: "Vian Dsouza — Data Science & Analytics",
+  description:
+    "Data Science postgraduate (MSc, University of Bristol) specialising in predictive modelling, machine learning, and analytics. Python, SQL, RAG pipelines, and data storytelling.",
   generator: "v0.app",
 }
 
