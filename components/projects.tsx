@@ -5,6 +5,21 @@ import { Github, ExternalLink } from "lucide-react"
 
 const projects = [
   {
+    title: "VoltEntry — EV Infrastructure Financial & Market Entry Model",
+    description:
+      "Dynamic 3-statement financial model and site-selection framework for utility-scale EV charging network deployment across global metros.",
+    metric: "5 cities",
+    metricLabel: "Global markets scored",
+    points: [
+      "Built a weighted market-entry matrix scoring 5 metros (NYC, London, Paris, Tokyo, Amsterdam) on population density, electricity tariffs, EV subsidies, and competitor density.",
+      "Engineered a C-suite scenario selector with data-validation dropdowns feeding a dynamic 5-year forecast of revenue, electricity costs, CapEx, and free cash flow.",
+      "Automated an investment valuation layer using NPV and IRR to establish project viability, with MIN/MAX capping to sanitise and constrain input bounds.",
+    ],
+    technologies: ["Excel", "XLOOKUP", "INDEX/MATCH", "NPV", "IRR", "Financial Modeling"],
+    github: "https://github.com/vd0208/VoltEntry_excel_project",
+    live: null as string | null,
+  },
+  {
     title: "Customer Churn Analysis & Predictive Modelling",
     description: "Random Forest pipeline that flags at-risk customers and quantifies revenue at risk.",
     metric: "85%",
