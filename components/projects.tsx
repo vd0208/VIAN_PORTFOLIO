@@ -5,10 +5,23 @@ import { Github, ExternalLink } from "lucide-react"
 
 const projects = [
   {
+    title: "VoltEntry — EV Infrastructure Financial & Market Entry Model",
+    description:
+      "Dynamic 3-statement financial model and site-selection framework for utility-scale EV charging network deployment across global metros.",
+    metric: "Financial & Market Entry Modeling (Excel)",
+    points: [
+      "Built a weighted market-entry matrix scoring 5 metros (NYC, London, Paris, Tokyo, Amsterdam) on population density, electricity tariffs, EV subsidies, and competitor density.",
+      "Engineered a C-suite scenario selector with data-validation dropdowns feeding a dynamic 5-year forecast of revenue, electricity costs, CapEx, and free cash flow.",
+      "Automated an investment valuation layer using NPV and IRR to establish project viability, with MIN/MAX capping to sanitise and constrain input bounds.",
+    ],
+    technologies: ["Excel", "XLOOKUP", "INDEX/MATCH", "NPV", "IRR", "Financial Modeling"],
+    github: "https://github.com/vd0208/VoltEntry_excel_project",
+    live: null as string | null,
+  },
+  {
     title: "Customer Churn Analysis & Predictive Modelling",
     description: "Random Forest pipeline that flags at-risk customers and quantifies revenue at risk.",
-    metric: "85%",
-    metricLabel: "Prediction accuracy",
+    metric: "Predictive Analytics & Retention Dashboard",
     points: [
       "Built a Random Forest classifier identifying at-risk customers with 85% accuracy to drive targeted retention.",
       "Engineered a proprietary 'Usage Decay' feature quantifying 90-day engagement drop-off for earlier warning signals.",
@@ -21,8 +34,7 @@ const projects = [
   {
     title: "Indian Budget Analysis using RAG",
     description: "Retrieval-Augmented Generation system analysing Indian Union Budgets with fully local LLMs.",
-    metric: "40%",
-    metricLabel: "Q&A accuracy uplift",
+    metric: "Local RAG & Policy Intelligence Engine",
     points: [
       "Structured financial data from 100+ pages of policy documents for year-on-year comparison across 15+ ministries.",
       "Lifted Q&A accuracy by 40% with citation-level source attribution, minimising hallucination on sensitive queries.",
@@ -35,8 +47,7 @@ const projects = [
   {
     title: "Buycision",
     description: "AI-powered shopping decisions platform with review sentiment analysis.",
-    metric: "AI/ML",
-    metricLabel: "Sentiment engine",
+    metric: "AI-Driven E-Commerce & Sentiment Analytics",
     points: [
       "Built with React & MongoDB featuring AI-driven product review sentiment analysis.",
       "Created an analytics dashboard tracking user behaviour and redirection statistics.",
@@ -49,8 +60,7 @@ const projects = [
   {
     title: "Aider+",
     description: "Medical appointment and hospital management system with emergency alerts.",
-    metric: "Full-stack",
-    metricLabel: "MERN booking system",
+    metric: "Healthcare Management & Emergency Booking System",
     points: [
       "Comprehensive patient booking system with emergency alert features across multiple partner hospitals.",
       "Real-time appointment scheduling with hospital-specific service information.",
@@ -97,9 +107,9 @@ export function Projects() {
             >
               {/* Metric header */}
               <div className="flex items-start justify-between gap-4 pb-4 border-b border-border">
-                <div>
-                  <p className="font-mono text-3xl font-bold text-primary">{project.metric}</p>
-                  <p className="mono-label text-[10px] text-muted-foreground mt-1">{project.metricLabel}</p>
+                <div className="flex items-center gap-2">
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-primary" />
+                  <p className="mono-label text-xs font-semibold text-primary text-balance">{project.metric}</p>
                 </div>
                 <div className="flex gap-2">
                   <a
