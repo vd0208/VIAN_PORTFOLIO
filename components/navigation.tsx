@@ -34,12 +34,12 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-16">
-          <a href="#" className="flex items-center gap-2 group">
-            <span className="flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground font-mono text-sm font-bold">
+          <a href="#" className="flex items-center gap-2.5 group">
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground font-mono text-sm font-bold glow-primary transition-transform group-hover:scale-110">
               VD
             </span>
-            <span className="text-sm font-semibold tracking-tight text-foreground group-hover:text-primary transition-colors">
-              Vian Dsouza
+            <span className="display text-lg tracking-wide text-foreground">
+              VIAN<span className="holo-text">D</span>
             </span>
           </a>
 

@@ -41,8 +41,8 @@ export function About() {
     <section id="about" ref={sectionRef} className="py-20 border-t border-border">
       <div className={`space-y-12 ${isVisible ? "fade-in-up" : "opacity-0"}`}>
         <header className="space-y-3">
-          <p className="mono-label text-xs text-primary">01 — Profile</p>
-          <h2 className="text-3xl lg:text-4xl font-bold tracking-tight">About me</h2>
+          <p className="mono-label text-xs text-accent">01 — Profile</p>
+          <h2 className="display text-4xl lg:text-6xl">About me</h2>
         </header>
 
         {/* Professional summary */}

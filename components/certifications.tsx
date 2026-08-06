@@ -46,8 +46,8 @@ export function Certifications() {
     <section id="certifications" ref={sectionRef} className="py-20 border-t border-border">
       <div className={`space-y-12 ${isVisible ? "fade-in-up" : "opacity-0"}`}>
         <header className="space-y-3">
-          <p className="mono-label text-xs text-primary">05 — Credentials</p>
-          <h2 className="text-3xl lg:text-4xl font-bold tracking-tight">Certifications</h2>
+          <p className="mono-label text-xs text-accent">05 — Credentials</p>
+          <h2 className="display text-4xl lg:text-6xl">Certifications</h2>
         </header>
 
         <div className="grid md:grid-cols-3 gap-5">

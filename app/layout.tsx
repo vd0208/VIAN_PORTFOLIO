@@ -2,7 +2,10 @@ import type React from "react"
 import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
+import { Anton } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+
+const anton = Anton({ weight: "400", subsets: ["latin"], variable: "--font-anton" })
 import { Suspense } from "react"
 import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css"
@@ -20,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="bg-background" suppressHydrationWarning>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -33,7 +36,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable} ${anton.variable}`}>
         <ThemeProvider>
           <Suspense fallback={null}>{children}</Suspense>
           <Analytics />

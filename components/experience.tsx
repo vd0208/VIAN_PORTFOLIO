@@ -69,8 +69,8 @@ export function Experience() {
     <section id="experience" ref={sectionRef} className="py-20 border-t border-border">
       <div className={`space-y-12 ${isVisible ? "fade-in-up" : "opacity-0"}`}>
         <header className="space-y-3">
-          <p className="mono-label text-xs text-primary">02 — Track Record</p>
-          <h2 className="text-3xl lg:text-4xl font-bold tracking-tight">Experience &amp; leadership</h2>
+          <p className="mono-label text-xs text-accent">02 — Track Record</p>
+          <h2 className="display text-4xl lg:text-6xl">Experience &amp; leadership</h2>
         </header>
 
         <div className="relative space-y-6 md:pl-8 md:border-l md:border-border">

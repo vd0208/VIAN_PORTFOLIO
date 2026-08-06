@@ -68,11 +68,16 @@ export function VisitorGate() {
       aria-modal="true"
       aria-labelledby="visitor-gate-title"
     >
-      <div className="grid-bg grid-bg-fade pointer-events-none absolute inset-0 opacity-60" aria-hidden="true" />
-      <div className="fade-in-up relative w-full max-w-md rounded-xl border border-border bg-card p-8 shadow-2xl">
+      <div className="grid-bg grid-bg-fade pointer-events-none absolute inset-0 opacity-40" aria-hidden="true" />
+      <div
+        className="aurora pointer-events-none h-72 w-72 left-1/2 top-1/4 -translate-x-1/2"
+        style={{ background: "oklch(0.64 0.26 322)" }}
+        aria-hidden="true"
+      />
+      <div className="fade-in-up relative w-full max-w-md rounded-2xl border border-primary/30 bg-card/90 backdrop-blur-xl p-8 glow-primary">
         <p className="mono-label text-xs text-accent">Welcome</p>
-        <h2 id="visitor-gate-title" className="mt-3 text-2xl font-semibold text-balance text-card-foreground">
-          Before you explore
+        <h2 id="visitor-gate-title" className="display mt-3 text-3xl text-balance text-card-foreground">
+          Before you <span className="holo-text">explore</span>
         </h2>
         <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
           {"I'd love to know who's visiting. Enter your name to view the portfolio."}
@@ -102,7 +107,7 @@ export function VisitorGate() {
             ) : null}
           </div>
 
-          <Button type="submit" className="w-full" disabled={submitting}>
+          <Button type="submit" className="w-full rounded-full glow-primary" disabled={submitting}>
             {submitting ? (
               <>
                 <Loader2 className="size-4 animate-spin" aria-hidden="true" />

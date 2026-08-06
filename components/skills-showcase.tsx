@@ -60,8 +60,8 @@ export function SkillsShowcase() {
     <section id="skills" ref={sectionRef} className="py-20 border-t border-border">
       <div className={`space-y-12 ${isVisible ? "fade-in-up" : "opacity-0"}`}>
         <header className="space-y-3">
-          <p className="mono-label text-xs text-primary">04 — Toolkit</p>
-          <h2 className="text-3xl lg:text-4xl font-bold tracking-tight">Technical expertise</h2>
+          <p className="mono-label text-xs text-accent">04 — Toolkit</p>
+          <h2 className="display text-4xl lg:text-6xl">Technical expertise</h2>
           <p className="text-lg text-muted-foreground max-w-2xl text-pretty">
             The languages, frameworks, and methods I use to build scalable, data-driven solutions.
           </p>
