@@ -7,10 +7,12 @@ import { SkillsShowcase } from "@/components/skills-showcase"
 import { Certifications } from "@/components/certifications"
 import { Awards } from "@/components/awards"
 import { Contact } from "@/components/contact"
+import { VisitorGate } from "@/components/visitor-gate"
 
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <VisitorGate />
       <Navigation />
       <main>
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
