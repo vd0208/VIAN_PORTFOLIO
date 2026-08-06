@@ -5,6 +5,12 @@ import { BadgeCheck } from "lucide-react"
 
 const certifications = [
   {
+    title: "Forward Program",
+    issuer: "McKinsey.org · Jun 2026",
+    description:
+      "Digital and leadership skills program building adaptability, structured problem-solving, and career resilience.",
+  },
+  {
     title: "IBM Project Management Certificate",
     issuer: "IBM · Coursera",
     description: "Foundations of planning, executing, and closing projects across Agile and traditional methodologies.",
