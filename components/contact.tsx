@@ -32,8 +32,10 @@ export function Contact() {
         className={`max-w-7xl mx-auto px-6 lg:px-12 space-y-12 ${isVisible ? "fade-in-up" : "opacity-0"}`}
       >
         <header className="space-y-3 max-w-2xl">
-          <p className="mono-label text-xs text-primary">07 — Contact</p>
-          <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-balance">Let&apos;s build with data</h2>
+          <p className="mono-label text-xs text-accent">07 — Contact</p>
+          <h2 className="display text-5xl lg:text-7xl text-balance">
+            Let&apos;s build with <span className="holo-text">data</span>
+          </h2>
           <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
             Open to data-driven consulting and analytical roles. Reach out about opportunities, collaborations, or to
             talk through a problem worth modelling.

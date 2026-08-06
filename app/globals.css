@@ -3,80 +3,85 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/*
+  DRIPZ-inspired palette: near-black deep-purple canvas, vibrant magenta/violet
+  primary, and an iridescent holographic accent. The site defaults to dark.
+*/
 :root {
-  --background: oklch(0.985 0.003 230);
-  --foreground: oklch(0.21 0.03 250);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.21 0.03 250);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.21 0.03 250);
-  --primary: oklch(0.42 0.13 250);
-  --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.94 0.01 230);
-  --secondary-foreground: oklch(0.3 0.04 250);
-  --muted: oklch(0.95 0.006 230);
-  --muted-foreground: oklch(0.52 0.02 250);
-  --accent: oklch(0.7 0.11 195);
-  --accent-foreground: oklch(0.2 0.04 230);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.9 0.008 235);
-  --input: oklch(0.94 0.006 230);
-  --ring: oklch(0.42 0.13 250);
-  --chart-1: oklch(0.42 0.13 250);
-  --chart-2: oklch(0.7 0.11 195);
-  --chart-3: oklch(0.55 0.1 220);
-  --chart-4: oklch(0.65 0.09 175);
-  --chart-5: oklch(0.5 0.12 265);
-  --radius: 0.5rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.21 0.03 250);
-  --sidebar-primary: oklch(0.42 0.13 250);
-  --sidebar-primary-foreground: oklch(0.99 0 0);
-  --sidebar-accent: oklch(0.7 0.11 195);
-  --sidebar-accent-foreground: oklch(0.2 0.04 230);
-  --sidebar-border: oklch(0.9 0.008 235);
-  --sidebar-ring: oklch(0.42 0.13 250);
+  --background: oklch(0.13 0.03 305);
+  --foreground: oklch(0.96 0.01 310);
+  --card: oklch(0.17 0.035 305);
+  --card-foreground: oklch(0.96 0.01 310);
+  --popover: oklch(0.16 0.035 305);
+  --popover-foreground: oklch(0.96 0.01 310);
+  --primary: oklch(0.64 0.26 322);
+  --primary-foreground: oklch(0.99 0.01 310);
+  --secondary: oklch(0.24 0.045 305);
+  --secondary-foreground: oklch(0.96 0.01 310);
+  --muted: oklch(0.22 0.04 305);
+  --muted-foreground: oklch(0.72 0.04 312);
+  --accent: oklch(0.75 0.15 300);
+  --accent-foreground: oklch(0.14 0.03 305);
+  --destructive: oklch(0.62 0.24 18);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.3 0.05 308);
+  --input: oklch(0.24 0.045 305);
+  --ring: oklch(0.64 0.26 322);
+  --chart-1: oklch(0.64 0.26 322);
+  --chart-2: oklch(0.75 0.15 300);
+  --chart-3: oklch(0.68 0.15 270);
+  --chart-4: oklch(0.72 0.14 200);
+  --chart-5: oklch(0.6 0.2 345);
+  --radius: 0.875rem;
+  --sidebar: oklch(0.15 0.032 305);
+  --sidebar-foreground: oklch(0.96 0.01 310);
+  --sidebar-primary: oklch(0.64 0.26 322);
+  --sidebar-primary-foreground: oklch(0.99 0.01 310);
+  --sidebar-accent: oklch(0.75 0.15 300);
+  --sidebar-accent-foreground: oklch(0.14 0.03 305);
+  --sidebar-border: oklch(0.3 0.05 308);
+  --sidebar-ring: oklch(0.64 0.26 322);
 }
 
 .dark {
-  --background: oklch(0.16 0.02 255);
-  --foreground: oklch(0.94 0.008 230);
-  --card: oklch(0.2 0.025 255);
-  --card-foreground: oklch(0.94 0.008 230);
-  --popover: oklch(0.2 0.025 255);
-  --popover-foreground: oklch(0.94 0.008 230);
-  --primary: oklch(0.7 0.11 195);
-  --primary-foreground: oklch(0.16 0.02 255);
-  --secondary: oklch(0.27 0.03 255);
-  --secondary-foreground: oklch(0.94 0.008 230);
-  --muted: oklch(0.25 0.025 255);
-  --muted-foreground: oklch(0.68 0.02 235);
-  --accent: oklch(0.62 0.11 220);
-  --accent-foreground: oklch(0.96 0.008 230);
-  --destructive: oklch(0.55 0.18 25);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.3 0.025 255);
-  --input: oklch(0.26 0.025 255);
-  --ring: oklch(0.7 0.11 195);
-  --chart-1: oklch(0.7 0.11 195);
-  --chart-2: oklch(0.62 0.11 220);
-  --chart-3: oklch(0.65 0.09 175);
-  --chart-4: oklch(0.58 0.12 250);
-  --chart-5: oklch(0.72 0.1 165);
-  --sidebar: oklch(0.18 0.022 255);
-  --sidebar-foreground: oklch(0.94 0.008 230);
-  --sidebar-primary: oklch(0.7 0.11 195);
-  --sidebar-primary-foreground: oklch(0.16 0.02 255);
-  --sidebar-accent: oklch(0.62 0.11 220);
-  --sidebar-accent-foreground: oklch(0.96 0.008 230);
-  --sidebar-border: oklch(0.3 0.025 255);
-  --sidebar-ring: oklch(0.7 0.11 195);
+  --background: oklch(0.13 0.03 305);
+  --foreground: oklch(0.96 0.01 310);
+  --card: oklch(0.17 0.035 305);
+  --card-foreground: oklch(0.96 0.01 310);
+  --popover: oklch(0.16 0.035 305);
+  --popover-foreground: oklch(0.96 0.01 310);
+  --primary: oklch(0.64 0.26 322);
+  --primary-foreground: oklch(0.99 0.01 310);
+  --secondary: oklch(0.24 0.045 305);
+  --secondary-foreground: oklch(0.96 0.01 310);
+  --muted: oklch(0.22 0.04 305);
+  --muted-foreground: oklch(0.72 0.04 312);
+  --accent: oklch(0.75 0.15 300);
+  --accent-foreground: oklch(0.14 0.03 305);
+  --destructive: oklch(0.62 0.24 18);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.3 0.05 308);
+  --input: oklch(0.24 0.045 305);
+  --ring: oklch(0.64 0.26 322);
+  --chart-1: oklch(0.64 0.26 322);
+  --chart-2: oklch(0.75 0.15 300);
+  --chart-3: oklch(0.68 0.15 270);
+  --chart-4: oklch(0.72 0.14 200);
+  --chart-5: oklch(0.6 0.2 345);
+  --sidebar: oklch(0.15 0.032 305);
+  --sidebar-foreground: oklch(0.96 0.01 310);
+  --sidebar-primary: oklch(0.64 0.26 322);
+  --sidebar-primary-foreground: oklch(0.99 0.01 310);
+  --sidebar-accent: oklch(0.75 0.15 300);
+  --sidebar-accent-foreground: oklch(0.14 0.03 305);
+  --sidebar-border: oklch(0.3 0.05 308);
+  --sidebar-ring: oklch(0.64 0.26 322);
 }
 
 @theme inline {
   --font-sans: var(--font-geist-sans), "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), "Geist Mono Fallback", ui-monospace, monospace;
+  --font-display: var(--font-anton), var(--font-geist-sans), ui-sans-serif, sans-serif;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -137,6 +142,89 @@
   mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);
 }
 
+/* ── DRIPZ signature styling ─────────────────────────────── */
+
+/* Display headings: heavy, tight, uppercase */
+.display {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 0.92;
+  font-weight: 400;
+}
+
+/* Iridescent holographic gradient used for text + fills */
+.holo-text {
+  background: linear-gradient(
+    100deg,
+    oklch(0.8 0.14 200),
+    oklch(0.7 0.2 280),
+    oklch(0.66 0.26 322),
+    oklch(0.78 0.16 200)
+  );
+  background-size: 220% 220%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: holo-shift 8s ease-in-out infinite;
+}
+
+@keyframes holo-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Aurora glow blobs sitting behind content */
+.aurora {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(72px);
+  opacity: 0.5;
+  pointer-events: none;
+  animation: aurora-float 14s ease-in-out infinite;
+}
+
+@keyframes aurora-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -24px, 0) scale(1.12);
+  }
+}
+
+/* Glowing pill / marquee ribbon */
+.glow-primary {
+  box-shadow: 0 0 0 1px color-mix(in oklch, var(--primary) 40%, transparent),
+    0 8px 40px -8px color-mix(in oklch, var(--primary) 55%, transparent);
+}
+
+/* Scrolling marquee ribbon */
+.marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll 26s linear infinite;
+}
+
+.marquee-reverse {
+  animation-direction: reverse;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 /* Animations */
 @keyframes fade-in-up {
   from {
@@ -173,9 +261,9 @@
 }
 
 .card-hover:hover {
-  transform: translateY(-3px);
-  border-color: color-mix(in oklch, var(--primary) 50%, transparent);
-  box-shadow: 0 12px 30px -12px color-mix(in oklch, var(--primary) 35%, transparent);
+  transform: translateY(-4px);
+  border-color: color-mix(in oklch, var(--primary) 60%, transparent);
+  box-shadow: 0 18px 44px -16px color-mix(in oklch, var(--primary) 55%, transparent);
 }
 
 .mono-label {
